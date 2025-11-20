@@ -1,0 +1,138 @@
+/* General styling */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #4b6cb7, #182848);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Password box container */
+.passwordBox {
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(12px);
+  border-radius: 20px;
+  padding: 40px 50px;
+  width: 380px;
+  color: #fff;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.25);
+  text-align: center;
+  animation: fadeIn 0.8s ease-in;
+}
+
+/* Fade-in animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.passwordBox h2 {
+  font-size: 26px;
+  margin-bottom: 25px;
+  letter-spacing: 1px;
+  color: #f0f0f0;
+  text-shadow: 1px 1px 4px rgba(0,0,0,0.3);
+}
+
+/* Input and Copy button */
+.passwordBoxIn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.passwordBoxIn input {
+  width: 70%;
+  padding: 10px;
+  border: none;
+  border-radius: 10px 0 0 10px;
+  outline: none;
+  font-size: 16px;
+  text-align: center;
+  background: rgba(255, 255, 255, 0.2);
+  color: #fff;
+}
+
+.passwordBoxIn button {
+  background: #ff9800;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 0 10px 10px 0;
+  cursor: pointer;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.passwordBoxIn button:hover {
+  background: #ffa726;
+}
+
+/* Password length and options */
+.passwordLength {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 15px 0;
+  font-size: 15px;
+}
+
+.passwordLength label {
+  color: #f0f0f0;
+  font-weight: 500;
+}
+
+.passwordLength input[type='number'] {
+  width: 70px;
+  padding: 5px;
+  border-radius: 8px;
+  border: none;
+  text-align: center;
+  outline: none;
+  background: rgba(255, 255, 255, 0.2);
+  color: #fff;
+}
+
+.passwordLength input[type='checkbox'] {
+  width: 18px;
+  height: 18px;
+  accent-color: #ff9800;
+  cursor: pointer;
+}
+
+/* Generate button */
+.btn {
+  margin-top: 25px;
+  background: linear-gradient(135deg, #ff9800, #ff5722);
+  color: white;
+  border: none;
+  padding: 12px 25px;
+  border-radius: 12px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  transform: scale(1.05);
+  background: linear-gradient(135deg, #ffb74d, #ff7043);
+}
+
+/* Responsive for mobile */
+@media (max-width: 450px) {
+  .passwordBox {
+    width: 90%;
+    padding: 30px;
+  }
+}
